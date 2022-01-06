@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+
+<!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
+
+<!-- JS FontAwesome -->
+<script src="https://kit.fontawesome.com/c6dd977dde.js" crossorigin="anonymous"></script>
+
+<!-- Estilos CSS -->
+<link rel="stylesheet" href="style.css">   
+
+
+</head>
+<body>
+
+    <h2><br> "Well done is better than well said." <p style="font-size: 80%; text-align: center;">-Benjamin Franklin</p> </h2>
+<!-- ID Particles.js -->
+<div id="particles-js"></div>
+<header class="contenedor header">
+
+    <!-- Barra de navegación -->
+    <nav class="barra-navegacion">
+        <ul>
+            <!--BOTONES-->
+            <li><a type="button" onclick="mostrarInfo();" class="boton">About Me </i></a></li>
+            <li><a type="button" onclick="mostrarExp();" class="boton">Experience</a></li>
+            <li><a type="button" onclick="mostrarSkills();" class="boton">Skills</a></li>
+            <li><a type="button" onclick="mostrarContact();" class="boton">Contact</a></li>
+
+
+        <script type="text/javascript">
+            function mostrarInfo(){ //ABOUT ME
+                if(document.getElementById('info').style.display =='inline'){ //si esta activo
+                    document.getElementById('info').style.display = 'none';   //lo ocultamos
+                }else{                                                        //caso contrario:
+                document.getElementById('info').style.display = 'inline'; //mostrar
+                document.getElementById('experience').style.display = 'none'; //any else hide
+                document.getElementById('skills').style.display = 'none';
+                document.getElementById('contact').style.display = 'none';}//else
+                }
+
+            function mostrarExp(){ //EXPERIENCE
+                if(document.getElementById('experience').style.display =='inline'){ 
+                    document.getElementById('experience').style.display = 'none';   
+                }else{ 
+                document.getElementById('experience').style.display = 'inline';
+                document.getElementById('info').style.display = 'none';
+                document.getElementById('skills').style.display = 'none';
+                document.getElementById('contact').style.display = 'none';}
+                }    
+
+            function mostrarSkills(){ //SKILLS
+                if(document.getElementById('skills').style.display =='inline'){ 
+                    document.getElementById('skills').style.display = 'none';   
+                }else{ 
+                document.getElementById('skills').style.display = 'inline';
+                document.getElementById('experience').style.display = 'none';
+                document.getElementById('info').style.display = 'none';
+                document.getElementById('contact').style.display = 'none';}
+                }   
+            
+            function mostrarContact(){ //CONTACT
+                if(document.getElementById('contact').style.display =='inline'){ 
+                    document.getElementById('contact').style.display = 'none';   
+                }else{ 
+                document.getElementById('contact').style.display = 'inline';
+                document.getElementById('experience').style.display = 'none';
+                document.getElementById('skills').style.display = 'none';
+                document.getElementById('info').style.display = 'none';}
+                } 
+         </script>
+
+
+            <li>
+                <a href="https://www.linkedin.com/in/jose-felix-hernandez-169a16217/" target="blank" class="logo">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://github.com/f3lix1110" target="blank" class="logo">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.facebook.com/jose.f.hernandez.314" target="blank" class="logo">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+<!--ABOUT ME-->
+    <div id="info">
+        <br>
+        <br><img src="img/Avatar1.jpeg">
+        <strong>PERSONAL INFORMATION</strong>
+        <p> <strong>Hernandez Farias Jose Felix</strong> </p>
+        <p>Guadalajara, Jalisco, Mexico</p>
+        <br>
+        <strong>EDUCATION</strong>
+        <p>
+            <em>Informatics Enginering </em><strong>2022</strong>
+            - UDG - Centro Universitario de Ciencias Exactas e Ingenierías - Guadalajara, Jalisco, Mexico.
+        </p>
+        <br>
+        <br>
+                        <strong>OBJECTIVES</strong>
+
+                        <ul>
+                            <li>I think how grow to be better personally and professionally</li>
+                            <li>My purpose is help and contribute developing my professional career</li>
+                            <li>I would like contribute to a reputable company</li>
+                            <li>Try to prove my capacities</li>
+                            <li>Learn new ways of communication</li>
+                            <li>Develop new skills</li>
+                        </ul>
+        <br>  
+     </div>
+
+<!--EXPERIENCE-->
+<div id="experience">
+    <br><img src="img/Avatar2.jpeg">
+    <p>
+        <strong>WORK EXPERIENCE</strong><br>
+        <em>SUTERM</em> – Intern – Software Developer MAY 2021 Creation of a system to manage and consult the benefits provided to CFE workers, using technologies such as Laravel8, Bootstrap, MySQL, JavaScript, CSS, GitHub, Trello.
+    </p>
+    <br>
+                        <strong>CERTIFICATES</strong>
+                        <p> BOOTCAMP Generation MX: Guadalajara – Full Stack Java Developer. NOV 2021</p>
+</div>
+
+<!--SKILLS-->
+</div>
+<div id="skills">
+    <br><img src="img/Avatar3.jpeg">
+    <strong>LENGUAGE</strong>
+                        <p>ENGLISH - Intermediate B1</p>
+                        <p> SPANISH - Native</p>
+    <ul>
+        <br>
+        <strong>TECHNICAL SKILLS</strong><br>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Bootstrap, Laravel, JS Frameworks - Angular, NodeJS</li>
+        <li>JAVA, PHP, PYTHON, C, C++</li>
+        <li>Data structures and algorithms</li>
+        <li>Database Management</li>
+        <li>MySQL, SQL Server, MongoDB, PostgreSQL</li>
+        <li>Git, Postman </li>
+        <li>SCRUM methodology</li>
+        <li>Terminal </li>
+        <li>Set up a server on Linux with services such as FTP, SSH, DNS, CUPS, SENDMAIL, SMB, IPTABLES</li>
+    </ul>
+    <br>
+    <strong> SOFT SKILLS</strong>
+
+    •	 SELF-MOTIVATION
+    •	 TEAMWORK
+    •	 RESPONSABILITY
+    •	 PERSISTENT 
+    •	 NEGOTIATION AND CONFLICT RESOLUTION
+    •	 FLEXIBILITY
+    •	 TIME MANAGEMENTE
+</div>
+
+<!--CONTACT-->
+<div id="contact"> <!--mandar hipervinculo para enviar mail con texto en cuerpo-->
+    <a href="mailto:felixhdz1110@gmail.com?subject=Questions&body=En que puedo ayudarte!? :D" ><p style="color:tomato;">felixhdz1110@gmail.com</p></a>
+    <br><img src="img/Avatar4.jpeg">
+</div>
+
+    <!-- Título y descripción -->
+    <div class="contenido-descripcion">
+        <div>
+            <h1 class="titulo">
+                <span> <br>Designer</span>
+                <span>Full-Stack Developer</span>
+                
+            </h1>
+            <article class="descripcion">
+            <p style="text-align: center;"><br>I design and code from simple requests to more complex things,
+                    I love learning and opening up to new things, strong programming skills
+                    to build and maintain well-functioning websites. Ready to start projects
+                    freelancer, work with a new team that I would love to meet and
+                    connect with each of them, work with clients or anywhere
+                    interested in the project. In addition, I love to support and get involved in projects, any questions or situations don´t hesitate to contact me for help ;)</p> 
+            </article>
+        </div>
+      <!--  <br><img src="img/Avatar1.jpeg"> -->  
+        </div>
+        
+    
+</header>
+
+<!-- JS Particles.js -->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
