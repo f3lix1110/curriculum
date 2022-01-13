@@ -8,6 +8,12 @@ h1{
     color:rgb(162, 162, 252);
 }
 
+div{
+    height:110%;
+    width:105%;
+    word-wrap: break-word;
+    }
+
 img{
     margin: 15px;
     width: 20%;
@@ -15,24 +21,21 @@ img{
 }
 
 p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI';
     font-size: 120%;
     text-align: right;
+    margin:10px;
 }
 
 a{
     cursor:pointer}
 
-#info, #skills, #experience, #contact { /*predeterminado tener oculto la informacion con estos id´s*/
+#info, #skills, #experience, #contact, #contact2{ /*predeterminado tener oculto la informacion con estos id´s*/
     display: none;
 }
 
 /*-----------------------*/
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box;
-}
+
 
 body {
     background-color:#000;
@@ -51,34 +54,50 @@ body {
 }
 
 .contenedor {
-	width: 90%;
-	max-width: 1200px;
+	width: 95%;
     background-size: cover;
     background-image: url('../img/bg-header3.jpeg');
     background-position:center;
 	margin-left: auto; 
 	margin-right: auto;
-    margin-top: 15px;
+    margin-top: 2%;
     padding: 20px 30px;
     position: relative;
     z-index: 99;
     opacity: .85;
 }
 
+
+
+    #ajuste{
+        justify-content: space-between;
+    }
+
+
 .contenedor.header {
-    width: 85%;
+    width: 95%;
     border: 3px solid #f10d33;
 }
 
 .barra-navegacion ul {
-    display: flex; 
-    justify-content: space-between;
+    display: flex; /*lista en horizontal*/
+    justify-content: space-between; /*separacion de los iconos*/
     align-items: center;
+    margin: 5%;
 }
 
+@media screen and (max-width: 600px) { /*centrar el <ul> para la barra de navegacion*/
+    #ajuste{
+        justify-content: center;
+    }
+    }
+    
+
+
 .barra-navegacion li {
-    list-style: none;
+    list-style: none; /*quitar el estilo de lista "°" el punto*/
     display: inline-block;
+    margin: 2%;
 }
 
 .barra-navegacion .logo { /*logos git & Linkedin*/
@@ -104,9 +123,7 @@ body {
 }
 
 .contenido-descripcion {
-    width: 70%;
     display: flex;
-    height: 80%;
     align-items: center;
 }
 
@@ -116,31 +133,14 @@ body {
 }
 
 .contenido-descripcion .titulo span:first-child {
-    font-size: 120%; /*tamaño DESIGNER*/
+    font-size: 112%; /*tamaño DESIGNER*/
     display: block;
     font-weight: 300;  /*anchura*/
 }
 
 .contenido-descripcion .titulo span:last-child {
     font-weight: 900; /*anchura FULLSTACK*/
-    font-size: 115%;
-}
-
-.contenido-descripcion .btn-link {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 25px 0;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #3dff3e;
-    border: 1px solid #555555;
-    animation: parpadeo 2s linear infinite;
-    transition: .7s ease;
-}
-
-.contenido-descripcion .btn-link:hover {
-    border: 1px solid #bf2be4;
-    animation: none;
+    font-size: 108%;
 }
 
 

@@ -2,7 +2,7 @@ particlesJS(  //acceder a la funcion "dentro lleva un argumento que es un objeto
     {
         "particles": {
           "number": {
-            "value": 6,
+            "value": 12,
             "density": {
               "enable": true,
               "value_area": 800
@@ -55,7 +55,7 @@ particlesJS(  //acceder a la funcion "dentro lleva un argumento que es un objeto
           },
           "move": {
             "enable": true,
-            "speed": 8,
+            "speed": 12,
             "direction": "none",
             "random": false,
             "straight": false,
@@ -90,9 +90,9 @@ particlesJS(  //acceder a la funcion "dentro lleva un argumento que es un objeto
             },
             "bubble": {
               "distance": 400,
-              "size": 40,
+              "size": 60,
               "duration": 2,
-              "opacity": 8,
+              "opacity": 2,
               "speed": 3
             },
             "repulse": {
@@ -100,7 +100,7 @@ particlesJS(  //acceder a la funcion "dentro lleva un argumento que es un objeto
               "duration": 0.4
             },
             "push": {
-              "particles_nb": 4
+              "particles_nb": 8
             },
             "remove": {
               "particles_nb": 2

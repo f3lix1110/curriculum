@@ -13,27 +13,64 @@
 <!-- JS FontAwesome -->
 <script src="https://kit.fontawesome.com/c6dd977dde.js" crossorigin="anonymous"></script>
 
-<!-- Estilos CSS -->
-<link rel="stylesheet" href="style.css">   
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+<!-- Estilos CSS -->
+<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
     <h2><br> "Well done is better than well said." <p style="font-size: 80%; text-align: center;">-Benjamin Franklin</p> </h2>
+
 <!-- ID Particles.js -->
 <div id="particles-js"></div>
 <header class="contenedor header">
 
     <!-- Barra de navegación -->
     <nav class="barra-navegacion">
-        <ul>
-            <!--BOTONES-->
-            <li><a type="button" onclick="mostrarInfo();" class="boton">About Me </i></a></li>
-            <li><a type="button" onclick="mostrarExp();" class="boton">Experience</a></li>
-            <li><a type="button" onclick="mostrarSkills();" class="boton">Skills</a></li>
-            <li><a type="button" onclick="mostrarContact();" class="boton">Contact</a></li>
 
+        <div class="container-fluid">
+            <div class="row">
+
+              <div class="col-md-8">
+                <ul id="ajuste">
+                <li><a type="button" onclick="mostrarInfo();" class="boton">About Me </i></a></li>
+             
+                <li><a type="button" onclick="mostrarExp();" class="boton">Experience</a></li>
+            
+                <li><a type="button" onclick="mostrarSkills();" class="boton">Skills</a></li>
+            
+                <li><a type="button" onclick="mostrarContact();" class="boton">Contact</a></li>
+              </ul>
+              </div>
+        
+    <!--BOTONES-->
+       <div class="col-md-4">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/jose-felix-hernandez-169a16217/" target="blank" class="logo">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://github.com/f3lix1110" target="blank" class="logo">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.facebook.com/jose.f.hernandez.314" target="blank" class="logo">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+        </li>
+    </ul>
+    </div>
+
+</div><!--row-->
+</div><!--container-->
 
         <script type="text/javascript">
             function mostrarInfo(){ //ABOUT ME
@@ -43,7 +80,8 @@
                 document.getElementById('info').style.display = 'inline'; //mostrar
                 document.getElementById('experience').style.display = 'none'; //any else hide
                 document.getElementById('skills').style.display = 'none';
-                document.getElementById('contact').style.display = 'none';}//else
+                document.getElementById('contact').style.display = 'none';
+                document.getElementById('contact2').style.display = 'none';}//else
                 }
 
             function mostrarExp(){ //EXPERIENCE
@@ -53,7 +91,8 @@
                 document.getElementById('experience').style.display = 'inline';
                 document.getElementById('info').style.display = 'none';
                 document.getElementById('skills').style.display = 'none';
-                document.getElementById('contact').style.display = 'none';}
+                document.getElementById('contact').style.display = 'none';
+                document.getElementById('contact2').style.display = 'none';}
                 }    
 
             function mostrarSkills(){ //SKILLS
@@ -63,45 +102,45 @@
                 document.getElementById('skills').style.display = 'inline';
                 document.getElementById('experience').style.display = 'none';
                 document.getElementById('info').style.display = 'none';
-                document.getElementById('contact').style.display = 'none';}
+                document.getElementById('contact').style.display = 'none';
+                document.getElementById('contact2').style.display = 'none';}
                 }   
             
+                
             function mostrarContact(){ //CONTACT
+                
+            if(screen.width>600){ //si la pantalla es mayor a cierta resolucion (cambiar div para movil)
                 if(document.getElementById('contact').style.display =='inline'){ 
-                    document.getElementById('contact').style.display = 'none';   
-                }else{ 
-                document.getElementById('contact').style.display = 'inline';
-                document.getElementById('experience').style.display = 'none';
-                document.getElementById('skills').style.display = 'none';
-                document.getElementById('info').style.display = 'none';}
+                    document.getElementById('contact').style.display = 'none';
+                    document.getElementById('img1').style.display = 'inline';  //para desocultar la imagen
+                }else{
+                    document.getElementById('contact').style.display = 'inline';
+                    document.getElementById('experience').style.display = 'none';
+                    document.getElementById('skills').style.display = 'none';
+                    document.getElementById('info').style.display = 'none';
+                    document.getElementById('img1').style.display = 'none';
+                    document.getElementById('contact2').style.display = 'none'; //para ocultar la imagen principal al presionarla en pantalla de mayor resolucion  
                 } 
+            }else{ //si la resolucion es menor (movil)
+                if(document.getElementById('contact2').style.display =='inline'){
+                    document.getElementById('contact2').style.display = 'none';
+                }else{
+                    document.getElementById('contact2').style.display = 'inline';
+                    document.getElementById('experience').style.display = 'none';
+                    document.getElementById('skills').style.display = 'none';
+                    document.getElementById('info').style.display = 'none';
+                    document.getElementById('img1').style.display = 'inline';
+                }
+            }
+                }//mostrarinfo
          </script>
 
-
-            <li>
-                <a href="https://www.linkedin.com/in/jose-felix-hernandez-169a16217/" target="blank" class="logo">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://github.com/f3lix1110" target="blank" class="logo">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.facebook.com/jose.f.hernandez.314" target="blank" class="logo">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
-            </li>
-        </ul>
     </nav>
 
 <!--ABOUT ME-->
 <div id="info">
         <br>
-        <br><img src="img/Avatar1.jpeg">
+        <br><img src="img/Avatar1.5.jpeg">
         <strong>PERSONAL INFORMATION</strong>
         <p> <strong>Hernandez Farias Jose Felix</strong> </p>
         <p>Guadalajara, Jalisco, Mexico</p>
@@ -118,7 +157,7 @@
                         <ul>
                             <li>I think how grow to be better personally and professionally</li>
                             <li>My purpose is help and contribute developing my professional career</li>
-                            <li>I would like to be part of the growth of a company</li>
+                            <li>I would like to be part of the growth of a company or business project</li>
                             <li>Prove my capacities</li>
                             <li>Learn new ways of communication</li>
                             <li>Develop skills</li>
@@ -171,13 +210,21 @@
     •	 FLEXIBILITY AND ADAPTABILITY
 </div>
 
-<!--CONTACT-->
-<div id="contact"> <!--mandar hipervinculo para enviar mail con texto en cuerpo-->
-    <a href="mailto:felixhdz1110@gmail.com?subject=Questions&body=How Can I Help You? :D" ><p style="color:tomato;">felixhdz1110@gmail.com</p></a>
-    <br><img src="img/Avatar4.jpeg">
-</div>
 
-    <!-- Título y descripción -->
+
+<!--contenedor bootstrap-->
+<div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-6">
+
+          <!--CONTACT"2" solo en resolucion de telefono saldra hasta el tope de la descripcion y titulo-->
+    <div class="col-md-6" id="contact2"> <!--mandar hipervinculo para enviar mail con texto en cuerpo-->
+        <a href="mailto:felixhdz1110@gmail.com?subject=Questions&body=How Can I Help You? :D" ><p style="color:tomato;">felixhdz1110@gmail.com</p></a>
+        <br><img style="width: 70%;" src="img/Avatar4.jpeg">
+    </div>
+
+        <!-- Título y descripción -->
     <div class="contenido-descripcion">
         <div>
             <h1 class="titulo">
@@ -186,23 +233,41 @@
                 
             </h1>
             <article class="descripcion">
-            <p style="text-align: center;"><br>I design and code from simple requests to more complex things,
-                    I love learning and opening up to new things, strong programming skills
-                    to build and maintain well-functioning websites. Ready to start projects
-                    freelancer, work with a new team that I would love to meet and
-                    connect with each of them, work with clients or anywhere
-                    interested in the project. In addition, I love to support and get involved in projects, any questions or situations don´t hesitate to contact me for help ;)</p> 
+            <p style="text-align: center;"><br>I design and code from simple requests until more complex,
+                I love learn and opening up to new things. Strong programming skills
+                to build and maintain well-functioning websites. Ready to start either as a 
+                freelancer, work with a new team, with clients or any side
+                interested in the project. It´ll be a pleasure to meet and
+                connect with each of them. I love to support and get involved in projects, any questions or situations that I can help you don´t hesitate to contact me ;)</p> 
             </article>
         </div>
-<!--  <br><img src="img/Avatar1.jpeg"> -->  
-        </div>
+
+        </div><!--titulo descripcion-->
         
+      </div><!--columna-->
+
+      <div id="img1" class="col-md-6">
+        <br><img style="width: 80%; margin: 10%;"  src="img/Avatar1.jpeg">
+      </div>
+
+        <!--CONTACT-->
+    <div class="col-md-6" id="contact"> <!--mandar hipervinculo para enviar mail con texto en cuerpo-->
+        <a href="mailto:felixhdz1110@gmail.com?subject=Questions&body=How Can I Help You? :D" ><p style="color:tomato;">felixhdz1110@gmail.com</p></a>
+        <br><img style="width: 70%;" src="img/Avatar4.jpeg">
+    </div>
+
+    </div><!--row-->
+  </div><!--contenedor bootstrap-->
     
 </header>
 
 <!-- JS Particles.js -->
 <script src="js/particles.min.js"></script>
 <script src="js/app.js"></script>
+
+  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
 </body>
 </html>
