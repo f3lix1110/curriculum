@@ -8,11 +8,6 @@ h1{
     color:rgb(162, 162, 252);
 }
 
-div{
-    height:110%;
-    width:105%;
-    word-wrap: break-word;
-    }
 
 img{
     margin: 15px;
@@ -38,6 +33,7 @@ a{
 
 
 body {
+    min-width: 350px;
     background-color:#000;
     color: #fff;
     font-size: 18px;
@@ -61,21 +57,14 @@ body {
 	margin-left: auto; 
 	margin-right: auto;
     margin-top: 2%;
-    padding: 20px 30px;
+   /* padding: 20px 30px; */
     position: relative;
     z-index: 99;
     opacity: .85;
 }
 
 
-
-    #ajuste{
-        justify-content: space-between;
-    }
-
-
 .contenedor.header {
-    width: 95%;
     border: 3px solid #f10d33;
 }
 
@@ -86,7 +75,7 @@ body {
     margin: 5%;
 }
 
-@media screen and (max-width: 600px) { /*centrar el <ul> para la barra de navegacion*/
+@media screen and (max-width: 768px) { /*centrar el <ul> para la barra de navegacion*/
     #ajuste{
         justify-content: center;
     }
@@ -125,22 +114,6 @@ body {
 .contenido-descripcion {
     display: flex;
     align-items: center;
-}
-
-.contenido-descripcion .titulo {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-.contenido-descripcion .titulo span:first-child {
-    font-size: 112%; /*tamaño DESIGNER*/
-    display: block;
-    font-weight: 300;  /*anchura*/
-}
-
-.contenido-descripcion .titulo span:last-child {
-    font-weight: 900; /*anchura FULLSTACK*/
-    font-size: 108%;
 }
 
 

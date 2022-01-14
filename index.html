@@ -7,9 +7,6 @@
     <title>About Me</title>
 
 
-<!-- Fuentes -->
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap" rel="stylesheet">
-
 <!-- JS FontAwesome -->
 <script src="https://kit.fontawesome.com/c6dd977dde.js" crossorigin="anonymous"></script>
 
@@ -36,7 +33,7 @@
 
               <div class="col-md-8">
                 <ul id="ajuste">
-                <li><a type="button" onclick="mostrarInfo();" class="boton">About Me </i></a></li>
+                <li><a type="button" onclick="mostrarInfo();" class="boton">About Me </a></li>
              
                 <li><a type="button" onclick="mostrarExp();" class="boton">Experience</a></li>
             
@@ -45,7 +42,7 @@
                 <li><a type="button" onclick="mostrarContact();" class="boton">Contact</a></li>
               </ul>
               </div>
-        
+           
     <!--BOTONES-->
        <div class="col-md-4">
         <ul>
@@ -71,6 +68,8 @@
 
 </div><!--row-->
 </div><!--container-->
+
+</nav>
 
         <script type="text/javascript">
             function mostrarInfo(){ //ABOUT ME
@@ -109,7 +108,7 @@
                 
             function mostrarContact(){ //CONTACT
                 
-            if(screen.width>600){ //si la pantalla es mayor a cierta resolucion (cambiar div para movil)
+            if(screen.width>768){ //si la pantalla es mayor a cierta resolucion (cambiar div para movil)
                 if(document.getElementById('contact').style.display =='inline'){ 
                     document.getElementById('contact').style.display = 'none';
                     document.getElementById('img1').style.display = 'inline';  //para desocultar la imagen
@@ -134,8 +133,6 @@
             }
                 }//mostrarinfo
          </script>
-
-    </nav>
 
 <!--ABOUT ME-->
 <div id="info">
@@ -178,7 +175,6 @@
 </div>
 
 <!--SKILLS-->
-</div>
 <div id="skills">
     <br><img src="img/Avatar3.jpeg">
     <strong>LENGUAGE</strong>
@@ -216,30 +212,29 @@
 <div class="container-fluid">
     <div class="row">
 
-      <div class="col-md-6">
+    <div class="col-md-6">
 
-          <!--CONTACT"2" solo en resolucion de telefono saldra hasta el tope de la descripcion y titulo-->
-    <div class="col-md-6" id="contact2"> <!--mandar hipervinculo para enviar mail con texto en cuerpo-->
-        <a href="mailto:felixhdz1110@gmail.com?subject=Questions&body=How Can I Help You? :D" ><p style="color:tomato;">felixhdz1110@gmail.com</p></a>
+    <!--CONTACT"2" solo en resolucion de telefono saldra hasta el tope de la descripcion y titulo-->
+    <div class="col-md-6" id="contact2"> 
+        <a href="mailto:felixhdz1110@gmail.com?subject=Questions&body=How Can I Help You? :D" ><p style="color:tomato;">felixhdz1110@gmail.com</p></a> <!--mandar hipervinculo para enviar mail con texto en cuerpo-->
         <br><img style="width: 70%;" src="img/Avatar4.jpeg">
     </div>
 
         <!-- Título y descripción -->
-    <div class="contenido-descripcion">
-        <div>
-            <h1 class="titulo">
-                <span> <br>Designer</span>
-                <span>Full-Stack Developer</span>
-                
-            </h1>
-            <article class="descripcion">
-            <p style="text-align: center;"><br>I design and code from simple requests until more complex,
+    <div class="contenido-descripcion container">
+        <div class="row">
+            <h1 style="font-family: 'Segoe UI'; margin: auto;">
+                <span style="font-size: 112%; /*tamaño DESIGNER*/
+               display: block;">DESIGNER</span>
+               <span style=" font-weight: 900; /*anchura FULLSTACK*/
+               font-size: 108%;">FULL-STACK DEVELOPER</span>
+           </h1>
+            <p class="descripcion" style="text-align: center;"><br>I design and code from simple requests until more complex,
                 I love learn and opening up to new things. Strong programming skills
                 to build and maintain well-functioning websites. Ready to start either as a 
                 freelancer, work with a new team, with clients or any side
                 interested in the project. It´ll be a pleasure to meet and
                 connect with each of them. I love to support and get involved in projects, any questions or situations that I can help you don´t hesitate to contact me ;)</p> 
-            </article>
         </div>
 
         </div><!--titulo descripcion-->
