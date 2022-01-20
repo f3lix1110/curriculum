@@ -10,6 +10,7 @@ h1{
 
 
 img{
+    border-radius: 150%;
     margin: 15px;
     width: 20%;
     float: right;
@@ -23,7 +24,8 @@ p {
 }
 
 a{
-    cursor:pointer}
+    cursor:pointer
+}
 
 #info, #skills, #experience, #contact, #contact2{ /*predeterminado tener oculto la informacion con estos id´s*/
     display: none;
@@ -65,19 +67,20 @@ body {
 
 
 .contenedor.header {
+    border-radius: 1em;
     border: 3px solid #f10d33;
 }
 
 .barra-navegacion ul {
-    display: flex; /*lista en horizontal*/
+   /* display:flex; /*lista en horizontal*/
     justify-content: space-between; /*separacion de los iconos*/
-    align-items: center;
-    margin: 5%;
+    text-align:center;
 }
 
 @media screen and (max-width: 768px) { /*centrar el <ul> para la barra de navegacion*/
     #ajuste{
         justify-content: center;
+        padding: 0;
     }
     }
     
@@ -86,7 +89,7 @@ body {
 .barra-navegacion li {
     list-style: none; /*quitar el estilo de lista "°" el punto*/
     display: inline-block;
-    margin: 2%;
+    padding: 4%;
 }
 
 .barra-navegacion .logo { /*logos git & Linkedin*/
