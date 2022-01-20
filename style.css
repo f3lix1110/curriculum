@@ -85,7 +85,10 @@ body {
     }
     
 
-
+strong{
+    padding: 1%;
+    margin: 1%;
+}
 .barra-navegacion li {
     list-style: none; /*quitar el estilo de lista "°" el punto*/
     display: inline-block;
